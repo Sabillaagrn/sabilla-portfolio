@@ -80,7 +80,7 @@ const Contact = () => {
                                  bg-white/10 border border-white/20">
                   <Mail size={20} />
                 </span>
-                <span className="text-sm">sabillaanggraeni@gmail.com</span>
+                <span className="text-sm">sabillaanggraeni172@gmail.com</span>
               </a>
 
               <a
@@ -93,7 +93,7 @@ const Contact = () => {
                                  bg-white/10 border border-white/20">
                   <Github size={20} />
                 </span>
-                <span className="text-sm">github.com/yourusername</span>
+                <span className="text-sm">github.com/Sabillaagrn</span>
               </a>
 
               <a
@@ -106,7 +106,7 @@ const Contact = () => {
                                  bg-white/10 border border-white/20">
                   <Linkedin size={20} />
                 </span>
-                <span className="text-sm">linkedin.com/in/yourusername</span>
+                <span className="text-sm">linkedin.com/in/sabilla-anggraeni/</span>
               </a>
             </div>
           </div>

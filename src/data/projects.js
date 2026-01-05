@@ -1,20 +1,20 @@
 // projectsData.js
 export const projects = [
   {
-    title: "STUDEE",
-    desc: "Aplikasi manage efectivitas study and documentation progress task",
-    image: `${import.meta.env.BASE_URL}projects/STUDEE.png`,
-    tags: ["Laravel", "Tailwind", "SQLite"],
-    figma: "",
-    github: "https://github.com/Sabillaagrn/studee.git"
-  },
-  {
     title: "Snappie-Photobooth",
     desc: "Photobooth website, capture / upload photo with frame custom and filter",
     image: `${import.meta.env.BASE_URL}projects/snappie.png`,
     tags: ["React", "Tailwind"],
     figma: "https://www.figma.com/design/Kh4WcJcvnok2dG0hbY6i6x/Snappie?node-id=1-8&t=zQom87a7pbB0RLbu-1",
     github: "https://github.com/Sabillaagrn/photobooth-snappie.git"
+  },
+  {
+    title: "STUDEE",
+    desc: "App for Manage efectivitas study and documentation progress task",
+    image: `${import.meta.env.BASE_URL}projects/studee.png`,
+    tags: ["Laravel", "Tailwind", "SQLite"],
+    figma: "",
+    github: "https://github.com/Sabillaagrn/studee.git"
   },
   {
     title: "BillUp",
@@ -26,9 +26,9 @@ export const projects = [
   },
   {
     title: "Sawala Edu",
-    desc: "Real-time weather data with beautiful UI",
+    desc: "Sawala Edu is a web-based academic management application designed to help teachers efficiently manage student attendance, grades, and class activities through an integrated dashboard.",
     image: `${import.meta.env.BASE_URL}projects/sawalaEdu.png`,
-    tags: ["React", "Tailwind", "API", "Charts"],
+    tags: ["PHP", "Laravel", "Tailwind", "API", "Charts"],
     figma: "https://www.figma.com/design/czdaxlaX1XHxGmQiTo4uVw/SawalaEdu?node-id=2-2&t=TzEsJCNNktq7uxmM-1",
     github: "https://github.com/Sabillaagrn/Sawala_Edu.git"
   },

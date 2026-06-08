@@ -1,6 +1,14 @@
 // projectsData.js
 export const projects = [
   {
+    title: "SkillMatch",
+    desc: "SkillMatch adalah platform berbasis AI yang menganalisis deskripsi lowongan kerja untuk menghitung tingkat kecocokan skill pelamar, mengungkap skill gap yang perlu ditingkatkan, serta merekomendasikan peluang karier yang paling relevan.",
+    image: `${import.meta.env.BASE_URL}projects/SkillMatch.png`,
+    tags: ["React.js", "Tailwind", "python", "REST API"],
+    figma: "https://www.figma.com/design/vv0Yi3VVdUT2ZdWyTEnCrV/SkillMatch?node-id=0-1&t=o8H0KgU8JWxZIHj7-1",
+    github: "https://github.com/Sabillaagrn/SkillMatch-fe.git"
+  },
+  {
     title: "Snappie-Photobooth",
     desc: "Photobooth website, capture / upload photo with frame custom and filter",
     image: `${import.meta.env.BASE_URL}projects/snappie.png`,

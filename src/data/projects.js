@@ -10,6 +10,22 @@ export const projects = [
     link: "https://skill-match-fe-two.vercel.app"
   },
   {
+    title: "Hablun - Company Profile",
+    desc: "Hablun adalah sebuah website company profile yang dirancang untuk memberikan informasi lengkap tentang perusahaan, termasuk layanan, portofolio, dan kontak, dengan tampilan yang menarik dan responsif.",
+    image: `${import.meta.env.BASE_URL}projects/hablun.png`,
+    tags: ["React", "TypeScript", "Tailwind", "Supabase"],
+    github: "https://github.com/Sabillaagrn/hablun-website.git",
+    link: "https://hablunhub.com/"
+  },
+  {
+    title: "Self Checkout",
+    desc: "Self Checkout adalah aplikasi berbasis web yang memungkinkan pelanggan untuk melakukan proses checkout secara mandiri di toko.",
+    image: `${import.meta.env.BASE_URL}projects/selfCheckout.png`,
+    tags: ["React", "TypeScript", "Tailwind", "Laravel", "MySQL"],
+    figma: "https://www.figma.com/design/h9RBMkib45BtNCt5nJmNJU/Self-Chekout?node-id=110-710&t=qtKQYTHtBUmGj4Mg-0&fuid=1448956632186278625",
+    github: "https://github.com/Sabillaagrn/self-checkout-fe.git"
+  },
+  {
     title: "Snappie-Photobooth",
     desc: "Photobooth website, capture / upload photo with frame custom and filter",
     image: `${import.meta.env.BASE_URL}projects/snappie.png`,

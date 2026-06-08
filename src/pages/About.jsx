@@ -3,6 +3,7 @@ import {
   SiReact,
   SiTailwindcss,
   SiJavascript,
+  SiTypescript,
   SiVite,
   SiFigma,
   SiLaravel,
@@ -136,7 +137,7 @@ const About = () => {
           ))}
         </motion.div>
 
-        {/* Tech Stack - Colorful Icons */}
+        {/* Tech Stack - Horizontal Scroll */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -149,12 +150,16 @@ const About = () => {
             </span>
           </h3>
 
-          <div className="rounded-3xl border border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-8 md:p-12">
-            <div className="flex flex-wrap justify-center gap-6">
+          <div className="rounded-3xl border border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-6 md:p-12 overflow-hidden">
+            
+            {/* Scrollable Container */}
+            <div className="flex overflow-x-auto gap-6 pb-8 pt-4 px-4 snap-x snap-mandatory
+                            [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {[
                 { Icon: SiReact, name: "React", color: "#61DAFB" },
                 { Icon: SiTailwindcss, name: "Tailwind", color: "#06B6D4" },
                 { Icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
+                { Icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
                 { Icon: SiVite, name: "Vite", color: "#646CFF" },
                 { Icon: SiLaravel, name: "Laravel", color: "#FF2D20" },
                 { Icon: SiPhp, name: "PHP", color: "#777BB4" },
@@ -168,8 +173,9 @@ const About = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.05, type: "spring" }}
-                  whileHover={{ scale: 1.2, rotate: 5, y: -10 }}
-                  className="group relative flex flex-col items-center gap-3"
+                  whileHover={{ scale: 1.1, y: -10 }}
+                  /* Added shrink-0 and snap-center here */
+                  className="group relative flex flex-col items-center gap-3 shrink-0 snap-center"
                 >
                   <div className="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl
                                   group-hover:border-white/40 group-hover:bg-white/20 transition-all duration-300
@@ -182,6 +188,7 @@ const About = () => {
                 </motion.div>
               ))}
             </div>
+
           </div>
         </motion.div>
       </div>

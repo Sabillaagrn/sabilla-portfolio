@@ -6,7 +6,8 @@ export const projects = [
     image: `${import.meta.env.BASE_URL}projects/SkillMatch.png`,
     tags: ["React.js", "Tailwind", "python", "REST API"],
     figma: "https://www.figma.com/design/vv0Yi3VVdUT2ZdWyTEnCrV/SkillMatch?node-id=0-1&t=o8H0KgU8JWxZIHj7-1",
-    github: "https://github.com/Sabillaagrn/SkillMatch-fe.git"
+    github: "https://github.com/Sabillaagrn/SkillMatch-fe.git",
+    link: "https://skill-match-fe-two.vercel.app"
   },
   {
     title: "Snappie-Photobooth",

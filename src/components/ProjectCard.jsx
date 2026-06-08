@@ -1,6 +1,6 @@
 // ProjectCard.js
 import { motion } from "framer-motion"
-import { Figma, Github } from "lucide-react"
+import { Figma, Github, ExternalLink } from "lucide-react" // Tambahkan ExternalLink di sini
 
 const ProjectCard = ({ project }) => {
   return (
@@ -20,31 +20,51 @@ const ProjectCard = ({ project }) => {
         
         {/* Hover overlay with links */}
         <div className="absolute inset-0 flex items-center justify-center gap-3 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          
           {/* Figma Link */}
-          <motion.a
-            href={project.figma}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20
-                      hover:bg-white/20 transition-colors"
-          >
-            <Figma size={20} className="text-white" />
-          </motion.a>
+          {project.figma && (
+            <motion.a
+              href={project.figma}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20
+                        hover:bg-white/20 transition-colors"
+            >
+              <Figma size={20} className="text-white" />
+            </motion.a>
+          )}
 
           {/* Github Link */}
-          <motion.a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20
-                      hover:bg-white/20 transition-colors"
-          >
-            <Github size={20} className="text-white" />
-          </motion.a>
+          {project.github && (
+            <motion.a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20
+                        hover:bg-white/20 transition-colors"
+            >
+              <Github size={20} className="text-white" />
+            </motion.a>
+          )}
+
+          {/* Live Preview / Web App Redirect Link */}
+          {project.link && (
+            <motion.a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/20
+                        hover:bg-white/20 transition-colors"
+            >
+              <ExternalLink size={20} className="text-white" />
+            </motion.a>
+          )}
         </div>
       </div>
 
